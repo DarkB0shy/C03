@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:40:54 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/25 16:49:30 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:58:13 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,4 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	return (0);
-}
-
-int	main(void)
-{
-	char c[] = "LsEd";
-	char c1[] = "Lse";
-	ft_strncmp(c, c1, 3);
 }
