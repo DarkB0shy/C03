@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:32:36 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/25 16:32:22 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:35:02 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,5 @@ int	ft_strcmp(char *s1, char *s2)
 		}
 		i++;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	char c[] = "AivasdBJ";
-	char c1[] = "ABC";
-	ft_strcmp(c, c1);
 	return (0);
 }
