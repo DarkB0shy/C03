@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 12:50:00 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/24 17:05:58 by dcarassi         ###   ########.fr       */
+/*   Created: 2022/10/25 13:32:36 by dcarassi          #+#    #+#             */
+/*   Updated: 2022/10/25 16:32:22 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,30 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int	i;
-	int	s1lcount;
-	int	s2lcount;
+	int i;
+	int is1;
+	int is2;
 
+	is1 = 0;
+	is2 = 0;
 	i = 0;
-	s1lcount = 0;
-	s2lcount = 0;
-	while (s1[i])
+	while (s1[i] || s2[i])
 	{
-		s1lcount++;
+		if (s1[i] != s2[i])
+		{
+			is1 = s1[i];
+			is2 = s2[i];
+			return (is1 - is2);
+		}
 		i++;
 	}
-	i = 0;
-	while (s2[i])
-	{
-		s2lcount++;
-		i++;
-	}
-	return (s1lcount - s2lcount);
+	return (0);
+}
+
+int	main(void)
+{
+	char c[] = "AivasdBJ";
+	char c1[] = "ABC";
+	ft_strcmp(c, c1);
+	return (0);
 }
