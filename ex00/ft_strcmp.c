@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:32:36 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/25 16:35:02 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:34:58 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
-	int is1;
-	int is2;
+	int	i;
+	int	is1;
+	int	is2;
 
 	is1 = 0;
 	is2 = 0;

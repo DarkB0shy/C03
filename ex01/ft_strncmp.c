@@ -6,17 +6,17 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:40:54 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/25 16:58:13 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:40:54 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i;
-	int is1;
-	int	is2;
+	unsigned int	i;
+	int				is1;
+	int				is2;
 
 	is1 = 0;
 	is2 = 0;
