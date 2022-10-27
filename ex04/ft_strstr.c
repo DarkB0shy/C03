@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 21:02:05 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/26 15:08:24 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/27 14:31:18 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,9 @@ char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
 	int	j;
-	int	tofindl;
 
 	i = 0;
 	j = 0;
-	tofindl = get_w_length(to_find);
 	while (str[i])
 	{
 		while (str[i] == to_find[j])
@@ -38,7 +36,7 @@ char	*ft_strstr(char *str, char *to_find)
 			j++;
 			i++;
 		}
-		if (j == tofindl)
+		if (j == get_w_length(to_find))
 		{
 			i -= j;
 			return (&str[i]);
